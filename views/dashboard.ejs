@@ -1,0 +1,40 @@
+<%-
+include('partials/core/pageBeginning', {title: 'Dashboard'})
+-%>
+
+<div class="container body">
+
+  <div class="Title">
+    <h1>Atmena Home</h1>
+  </div>
+
+  <!-- sidebar menu -->
+  <div class="row">
+    <div class="col-md-3">
+      <h3>Buildings</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div id="sidebar-menu-list"></div>
+    </div>
+  </div>
+  <!-- /sidebar menu -->
+
+  <div role="main">
+
+    <footer>
+      <div class="text-center">
+        &copy; 2016 Atmena
+      </div>
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+
+</div>
+
+<%-
+include('partials/core/pageEnding', {scripts: [
+  'components/SidebarMenu/SidebarMenu.mount',
+]})
+-%>

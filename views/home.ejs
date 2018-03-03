@@ -1,0 +1,20 @@
+<%-
+include('partials/core/pageBeginning', {
+  page: 'home',
+  title: 'Home',
+  styles: ['home'],
+})
+-%>
+
+<div class="container">
+  <h1 class="page-header">IEQ Stats</h1>
+  <div id="comfort-mount"></div>
+  <div id="chartgroup-mount"></div>
+</div>
+
+<%-
+include('partials/core/pageEnding', {scripts: [
+  'components/Chart/ChartGroup.mount',
+  'components/ComfortWidget/ComfortWidget.mount',
+]})
+-%>

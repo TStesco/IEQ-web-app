@@ -1,0 +1,11 @@
+.chartRoot {
+  line-height: 1;
+}
+
+.chartRoot input[type=text] {
+  font-size: 13px;
+}
+
+.chartGroupRoot > .chartRoot {
+  margin-bottom: 32px;
+}

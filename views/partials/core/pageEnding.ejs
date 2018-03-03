@@ -1,0 +1,11 @@
+<script src="/js/common.js"></script>
+<script src="/js/global.main.js"></script>
+<%
+  const scripts = locals.scripts;
+  const scriptsLength = scripts ? scripts.length : 0;
+  for (var i = 0; i < scriptsLength; i++) { -%>
+    <script src="/js/<%- scripts[i] %>.js"></script>
+  <% }
+-%>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "name": "www",
+  "version": "0.0.1",
+  "description": "Website for IAQ sensor and data management",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/zephyrfydp/www.git"
+  },
+  "author": "Team Zephyr <zephyrfydp@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://gitlab.com/zephyrfydp/www/issues"
+  },
+  "homepage": "https://gitlab.com/zephyrfydp/www#README",
+  "dependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "body-parser": "^1.14.2",
+    "bootstrap": "^3.3.6",
+    "bootswatch": "^3.3.6",
+    "compression": "^1.6.1",
+    "dygraphs": "^1.1.1",
+    "ejs": "^2.4.1",
+    "envify": "^3.4.0",
+    "express": "^4.13.4",
+    "factor-bundle": "^2.5.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-symlink": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-env": "^0.4.4",
+    "grunt-sync": "^0.5.1",
+    "jit-grunt": "^0.10.0",
+    "jquery": "^2.2.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "log4js": "^0.6.31",
+    "morgan": "^1.6.1",
+    "pathmodify": "^0.5.0",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "serve-favicon": "^2.3.0",
+    "socket.io-client": "^1.4.5"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^5.0.1",
+    "grunt-chokidar": "^1.0.0",
+    "grunt-eslint": "^18.0.0",
+    "grunt-express-server": "^0.5.1",
+    "grunt-lesslint": "^3.0.1",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-shell": "^1.1.2",
+    "mocha": "^2.4.5",
+    "should": "^8.2.1",
+    "sinon": "^1.17.3",
+    "supertest": "^1.1.0"
+  },
+  "scripts": {
+    "postinstall": "grunt symlink",
+    "build": "grunt build",
+    "test": "grunt ci",
+    "start": "node app.js"
+  }
+}
